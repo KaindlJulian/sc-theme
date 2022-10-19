@@ -1,0 +1,10 @@
+@import "../utils/_colors.scss";
+
+.g-tabs {
+    &-link {
+        &:hover {
+            border-color: clr("primary", "darker");
+        }
+    }
+    border-bottom: 1px solid clr("foreground");
+}

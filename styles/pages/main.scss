@@ -1,0 +1,91 @@
+@import "../utils/_colors.scss";
+@import "../utils/_mixins.scss";
+
+html {
+    @include scrollbar();
+}
+
+body {
+    color: clr("foreground", "lighter");
+    .sc-type-light {
+        color: clr("foreground", "lighter");
+    }
+    &.sc-classic {
+        background: clr("background");
+    }
+}
+
+.soundBadge {
+    &__additional {
+        background: none !important;
+    }
+}
+
+.sound {
+    &__soundActions {
+        background-color: clr("background");
+    }
+}
+
+.l-search {
+    .l-main {
+        padding-top: 10px !important;
+    }
+    .l-fixed-left {
+        top: 64px !important;
+    }
+}
+
+.trackItem {
+    &.hover {
+        background-color: clr("background", "lighter");
+    }
+    &__additional {
+        background: none !important;
+    }
+}
+
+.compactTrackListItem {
+    &__trackTitle {
+        color: clr("foreground", "white");
+    }
+    &__user,
+    &__number {
+        color: clr("foreground", "lighter");
+    }
+    &__additional,
+    &.clickToPlay.active {
+        background: clr("transparent");
+    }
+    &.clickToPlay:hover {
+        background-color: clr("background", "lighter");
+    }
+}
+.compactTrackList {
+    border-color: clr("background");
+    &__moreLink {
+        border-color: clr("background");
+        &:hover {
+            background-color: clr("background");
+        }
+    }
+}
+
+.g-dark input[type="search"],
+.artistShortcutTile__username {
+    color: clr("foreground", "lighter");
+}
+
+.backgroundGradient__buffer {
+    opacity: 0.3 !important;
+}
+
+.sc-ministats-sounds {
+    &::before {
+        @include invertIcon();
+    }
+}
+
+.l-top {
+    background: clr("background");
+}

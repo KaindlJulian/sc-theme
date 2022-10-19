@@ -1,0 +1,14 @@
+@import "../utils/_mixins.scss";
+
+.fullHero {
+    background: unset !important;
+}
+
+.truncatedAudioInfo__wrapper::after {
+    height: 25px !important;
+    background: linear-gradient(
+        hsla(0, 0%, 100%, 0),
+        clrNotImportant("background", "lighter") 90%,
+        clrNotImportant("background", "lighter")
+    ) !important;
+}

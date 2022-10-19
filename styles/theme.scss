@@ -1,0 +1,22 @@
+// applies the theme based on system
+@media (prefers-color-scheme: dark) {
+    // components
+    @import "./components/header.scss";
+    @import "./components/button.scss";
+    @import "./components/player.scss";
+    @import "./components/queue.scss";
+    @import "./components/dialogs.scss";
+    @import "./components/borders.scss";
+    @import "./components/links.scss";
+    @import "./components/tag.scss";
+    @import "./components/tabs.scss";
+    @import "./components/scrollbar.scss";
+    @import "./components/image.scss";
+    @import "./components/modal.scss";
+    // pages
+    @import "./pages/main.scss";
+    @import "./pages/song.scss";
+    @import "./pages/playlist.scss";
+}
+// applies the UI modifications
+@import "modify.scss";

@@ -1,0 +1,9 @@
+@import "../utils/_colors.scss";
+
+a {
+    color: clr("foreground", "white");
+
+    &:hover {
+        color: clr("foreground", "lighter");
+    }
+}

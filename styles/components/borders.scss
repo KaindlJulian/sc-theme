@@ -1,0 +1,24 @@
+@import "../utils/_colors.scss";
+
+$border: 1px solid clr("foreground");
+
+.sc-classic {
+    .mixedSelectionModule {
+        border-bottom: $border;
+    }
+}
+.sc-border-light-top {
+    border-top: $border;
+}
+.sc-border-light-right {
+    border-right: $border;
+}
+.sc-border-light-left {
+    border-left: $border;
+}
+.sc-border-light-bottom {
+    border-bottom: $border;
+}
+.sc-border-light {
+    border: none !important;
+}

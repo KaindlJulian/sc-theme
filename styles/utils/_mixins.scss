@@ -1,0 +1,24 @@
+@mixin animatedScale($factor: 1.5) {
+    transition: transform 200ms;
+    &:hover {
+        transform: scale($factor);
+    }
+}
+
+@mixin scrollbar($size: 8px) {
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: clr("foreground");
+        border-radius: $size / 2;
+    }
+    &::-webkit-scrollbar-track {
+        background: clr("background", "darker");
+    }
+}
+
+@mixin invertIcon() {
+    filter: invert(1) !important;
+}

@@ -1,0 +1,30 @@
+@import "../utils/_colors.scss";
+
+.queue {
+    background-color: clr("background", "darker");
+    &__itemWrapper {
+        background-color: clr("background", "darker");
+    }
+    .queueItemView {
+        &.m-active,
+        &:hover {
+            background-color: clr("background", "darker");
+        }
+    }
+    &__itemsHeight {
+        background-image: none !important;
+    }
+    &__hide {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0IDEuNDFMMTIuNTkgMEw3IDUuNTlMMS40MSAwTDAgMS40MUw1LjU5IDdMMCAxMi41OUwxLjQxIDE0TDcgOC40MUwxMi41OSAxNEwxNCAxMi41OUw4LjQxIDdMMTQgMS40MVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=) !important;
+        background-size: auto !important;
+        height: 26px !important;
+    }
+    &__panel {
+        border-bottom: 1px solid clr("foreground");
+    }
+}
+
+
+.queueFallback__stationMode {
+    border-top: 1px solid clr("foreground");
+}

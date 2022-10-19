@@ -1,0 +1,35 @@
+$colors: (
+    "primary": (
+        "_default": hsl(20, 100%, 50%),
+        "darker": hsl(20, 57%, 29%),
+    ),
+    "background": (
+        "_default": hsl(236, 67%, 13%),
+        "darker": hsl(236, 68%, 7%),
+        "lighter": hsl(236, 67%, 19%),
+    ),
+    "foreground": (
+        "_default": hsl(232, 33%, 28%),
+        "lighter": hsl(232, 55%, 80%),
+        "darker": hsl(232, 33%, 8%),
+        "white": hsl(0, 0%, 95%),
+    ),
+    "transparent": (
+        "_default": hsla(0, 0%, 0%, 0),
+    ),
+);
+
+@function clr($key, $shade: "_default") {
+    $color: map-get(map-get($colors, $key), $shade) !important;
+    @return $color;
+}
+
+@function clrAlpha($alpha, $key, $shade: "_default") {
+    $color: rgba(map-get(map-get($colors, $key), $shade), $alpha) !important;
+    @return $color;
+}
+
+@function clrNotImportant($key, $shade: "_default") {
+    $color: map-get(map-get($colors, $key), $shade);
+    @return $color;
+}

@@ -1,0 +1,23 @@
+@import "../utils/_colors.scss";
+
+.selectionPlaylistBanner {
+    background: none !important;
+}
+
+.listenEngagement {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: clr("background", "lighter");
+    padding: 0px 8px 4px !important;
+}
+
+.listenEngagement {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: clr("background", "lighter");
+    padding: 0px 8px 4px !important;
+}
+
+.l-about-rows {
+    border-right: 1px solid clr("foreground");
+}

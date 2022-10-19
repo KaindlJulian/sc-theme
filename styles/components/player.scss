@@ -1,0 +1,44 @@
+@import "../utils/_colors.scss";
+@import "../utils/_mixins.scss";
+
+.playControls {
+    &__bg,
+    &__inner {
+        background-color: clr("background", "darker");
+        border-top: 1px solid clr("background", "darker");
+    }
+}
+
+.volume {
+    &__sliderWrapper {
+        background-color: clr("background", "darker");
+        border: 1px solid transparent !important;
+        &:before,
+        &:after {
+            border-color: clr("background", "darker");
+            background-color: clr("background", "darker");
+        }
+    }
+}
+
+.skipControl,
+.playControl,
+.shuffleControl,
+.repeatControl,
+.volume__speakerIcon,
+.playbackSoundBadge__queueCircle,
+.playbackSoundBadge__showQueue {
+    @include invertIcon();
+}
+
+.playbackSoundBadge {
+    &__like,
+    &__follow {
+        background-color: clr("transparent");
+        border-color: clr("transparent");
+    }
+}
+
+.playbackTimeline__duration {
+    color: clr("foreground", "white");
+}

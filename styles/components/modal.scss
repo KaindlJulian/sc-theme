@@ -1,0 +1,14 @@
+@import "../utils/_colors.scss";
+@import "../utils/_mixins.scss";
+
+.modal {
+    &Whiteout {
+        background-color: clrAlpha(0.8, "background");
+    }
+    &__modal {
+        background: clr("background");
+    }
+    &__closeButton {
+        @include invertIcon();
+    }
+}
