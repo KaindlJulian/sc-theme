@@ -4,20 +4,42 @@
     background: none !important;
 }
 
-.listenEngagement {
-    border: none !important;
-    box-shadow: none !important;
-    background-color: clr("background", "lighter");
-    padding: 0px 8px 4px !important;
-}
-
-.listenEngagement {
-    border: none !important;
-    box-shadow: none !important;
-    background-color: clr("background", "lighter");
-    padding: 0px 8px 4px !important;
-}
-
 .l-about-rows {
     border-right: 1px solid clr("foreground");
+}
+
+.trackItem {
+    &.hover,
+    &.active {
+        background-color: clr("background", "lighter");
+    }
+    &__additional {
+        background: none !important;
+    }
+}
+
+.compactTrackListItem {
+    &__trackTitle {
+        color: clr("foreground", "white");
+    }
+    &__user,
+    &__number {
+        color: clr("foreground", "lighter");
+    }
+    &__additional,
+    &.clickToPlay.active {
+        background: clr("transparent");
+    }
+    &.clickToPlay:hover {
+        background-color: clr("background", "lighter");
+    }
+}
+.compactTrackList {
+    border-color: clr("background");
+    &__moreLink {
+        border-color: clr("background");
+        &:hover {
+            background-color: clr("background");
+        }
+    }
 }

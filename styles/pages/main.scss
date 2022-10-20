@@ -36,39 +36,22 @@ body {
     }
 }
 
-.trackItem {
-    &.hover {
-        background-color: clr("background", "lighter");
-    }
-    &__additional {
-        background: none !important;
-    }
+.historicalPlays {
+    padding-bottom: 30px !important;
 }
 
-.compactTrackListItem {
-    &__trackTitle {
-        color: clr("foreground", "white");
-    }
-    &__user,
-    &__number {
-        color: clr("foreground", "lighter");
-    }
-    &__additional,
-    &.clickToPlay.active {
-        background: clr("transparent");
-    }
-    &.clickToPlay:hover {
-        background-color: clr("background", "lighter");
-    }
+.listenEngagement {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: clr("background", "lighter");
+    padding: 0px 8px 4px !important;
 }
-.compactTrackList {
-    border-color: clr("background");
-    &__moreLink {
-        border-color: clr("background");
-        &:hover {
-            background-color: clr("background");
-        }
-    }
+
+.listenEngagement {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: clr("background", "lighter");
+    padding: 0px 8px 4px !important;
 }
 
 .g-dark input[type="search"],
