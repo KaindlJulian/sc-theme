@@ -40,10 +40,6 @@
     }
 }
 
-.g-nav-link {
-    @include invertIcon();
-}
-
 .playButton {
     &::before,
     &::after {

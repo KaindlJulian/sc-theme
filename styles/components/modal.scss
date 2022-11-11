@@ -12,3 +12,21 @@
         @include invertIcon();
     }
 }
+
+.artistNavigation__list {
+    @include scrollbar();
+    &::-webkit-scrollbar-thumb {
+        background: clrAlpha(0.5, "foreground", "white");
+    }
+    &::-webkit-scrollbar-track {
+        background: clr("transparent");
+    }
+}
+
+.artistShortcutsModal {
+    background: clrAlpha(0.95, "background", "black");
+}
+
+.storyItemViewerHeader {
+    background: clr("background", "black");
+}
