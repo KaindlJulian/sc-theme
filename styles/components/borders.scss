@@ -1,24 +1,24 @@
 @import "../utils/_colors.scss";
 
-$border: 1px solid clr("foreground");
+$border: 1px solid clr("transparent");
 
-.sc-classic {
-    .mixedSelectionModule {
+.sc-border {
+    &-light-top {
+        border-top: $border;
+    }
+    &-light-right {
+        border-right: $border;
+    }
+    &-light-left {
+        border-left: $border;
+    }
+    &-light-bottom {
         border-bottom: $border;
     }
-}
-.sc-border-light-top {
-    border-top: $border;
-}
-.sc-border-light-right {
-    border-right: $border;
-}
-.sc-border-light-left {
-    border-left: $border;
-}
-.sc-border-light-bottom {
-    border-bottom: $border;
-}
-.sc-border-light {
-    border: none !important;
+    &-box {
+        border: $border;
+    }
+    &-light {
+        border: none !important;
+    }
 }

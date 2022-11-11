@@ -19,6 +19,11 @@ body {
     &__additional {
         background: none !important;
     }
+    &__artwork {
+        .sc-artwork {
+            border-radius: 4px !important;
+        }
+    }
 }
 
 .sound {
@@ -71,4 +76,12 @@ body {
 
 .l-top {
     background: clr("background");
+}
+
+.mixedModularHome {
+    &__item {
+        background: clr("background", "darker");
+        border: none !important;
+        border-radius: 16px !important;
+    }
 }

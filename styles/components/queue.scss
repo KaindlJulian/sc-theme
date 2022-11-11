@@ -20,11 +20,10 @@
         height: 26px !important;
     }
     &__panel {
-        border-bottom: 1px solid clr("foreground");
+        border-bottom: 1px solid clr("transparent");
     }
 }
 
-
 .queueFallback__stationMode {
-    border-top: 1px solid clr("foreground");
+    border-top: 1px solid clr("transparent");
 }

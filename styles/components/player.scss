@@ -7,6 +7,9 @@
         background-color: clr("background", "darker");
         border-top: 1px solid clr("background", "darker");
     }
+    &__inner {
+        box-shadow: 0px -1px 3px clrAlpha(0.5, "foreground");
+    }
 }
 
 .volume {
@@ -36,6 +39,9 @@
     &__follow {
         background-color: clr("transparent");
         border-color: clr("transparent");
+    }
+    &__avatar > * {
+        border-radius: 4px !important;
     }
 }
 

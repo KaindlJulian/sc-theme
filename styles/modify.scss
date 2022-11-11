@@ -1,4 +1,4 @@
-// removing and adapting UI elements
+// removing UI elements
 // ------------------------------------
 
 .l-footer,
@@ -23,6 +23,18 @@
     display: none !important;
 }
 
+// adapting UI elements
+// ------------------------------------
+
+[class*="sc-"] {
+    border-radius: 12px;
+}
+
+[class*="image"],
+.playableTile__actions {
+    border-radius: 18px;
+}
+
 .header__middle {
     .headerSearch__submit {
         right: 210px !important;
@@ -30,4 +42,21 @@
     .headerSearch {
         padding: 9px 200px 9px !important;
     }
+}
+
+.l-main {
+    border: none !important;
+}
+
+.sidebar {
+    &Header {
+        border: none !important;
+        background: clr("background", "darker");
+        padding: 4px 12px;
+    }
+}
+
+.mixedSelectionModule {
+    border-bottom: none !important;
+    padding: 18px 22px !important;
 }
