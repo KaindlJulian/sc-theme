@@ -40,7 +40,10 @@
         background-color: clr("transparent");
         border-color: clr("transparent");
     }
-    &__avatar > * {
+    &__avatar {
+        * {
+            border-radius: 4px !important;
+        }
         border-radius: 4px !important;
     }
 }
