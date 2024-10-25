@@ -63,6 +63,9 @@ body {
 .artistShortcutTile__username {
     color: clr("foreground", "lighter");
 }
+.artistShortcutTile__badge {
+    border: none !important;
+}
 
 .backgroundGradient__buffer {
     opacity: 0.3 !important;
@@ -76,6 +79,11 @@ body {
 
 .l-top {
     background: clr("background");
+}
+
+.l-container {
+    width: auto !important;
+    max-width: 1300px;
 }
 
 .mixedModularHome {

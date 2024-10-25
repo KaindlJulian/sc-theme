@@ -1,0 +1,7 @@
+@import "../utils/_colors.scss";
+
+input {
+    background: clr("foreground");
+    border-radius: 14px !important;
+    border-color: clr("foreground", "darker");
+}

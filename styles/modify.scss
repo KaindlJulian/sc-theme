@@ -10,6 +10,7 @@
 .header__navMenu,
 .header__userNavMessagesButton,
 .header__userNavActivitiesButton,
+.header__upsellWrapper,
 .commentForm,
 .searchTitle,
 .paging-eof,
@@ -20,6 +21,17 @@
 .profileMenu__distribute,
 .profileMenu__trackManager,
 .profileMenu__stations {
+    display: none !important;
+}
+
+// go+ songs in search results
+.searchList__item:has(
+        > .searchItem
+            > .sound
+            > .sound__body
+            > .sound__artwork
+            > .sound__tierIndicator:not(.sc-hidden)
+    ) {
     display: none !important;
 }
 
