@@ -1,0 +1,25 @@
+@import "../utils/_colors.scss";
+
+.l-user-hero {
+    margin-top: 16px;
+}
+
+.profileHeader {
+    &Background {
+        max-width: 1240px;
+        background: clr("transparent");
+        &__visual {
+            border-radius: 16px;
+        }
+    }
+}
+
+.userDropbar {
+    padding: 20px 0 20px !important;
+}
+
+.dropbar__content {
+    background: clr("background", "darker");
+    margin-top: 16px;
+    border-radius: 16px;
+}

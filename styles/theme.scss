@@ -14,8 +14,10 @@
     @import "./components/image.scss";
     @import "./components/modal.scss";
     @import "./components/inputs.scss";
+    @import "./components/sidebar.scss";
     // pages
     @import "./pages/main.scss";
+    @import "./pages/artist.scss";
     @import "./pages/song.scss";
     @import "./pages/playlist.scss";
 }
