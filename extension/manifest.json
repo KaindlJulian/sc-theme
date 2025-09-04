@@ -3,7 +3,7 @@
     "name": "SoundCloud Dark Theme",
     "description": "This extension provides a dark theme for SoundCloud.",
     "homepage_url": "https://github.com/KaindlJulian",
-    "version": "0.0.1",
+    "version": "2.0.0",
 
     "action": {
         "default_icon": {

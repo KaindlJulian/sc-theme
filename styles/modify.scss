@@ -1,74 +1,7 @@
 // removing UI elements
 // ------------------------------------
 
-.l-footer,
-.whoToFollowModule,
-.header__goUpsell_side_by_side_experience,
-.header__proUpsell_side_by_side_experience,
-.sidebarModule.mobileApps,
-.uploadButton,
-.header__navMenu,
-.header__userNavMessagesButton,
-.header__userNavActivitiesButton,
-.header__upsellWrapper,
-.commentForm,
-.searchTitle,
-.paging-eof,
-.listenArtistInfo__copyright,
-.profileMenu__premium,
-.profileMenu__partnerOffers,
-.profileMenu__insights,
-.profileMenu__distribute,
-.profileMenu__trackManager,
-.profileMenu__stations {
-    display: none !important;
-}
-
-// go+ songs in search results
-.searchList__item:has(
-        > .searchItem
-            > .sound
-            > .sound__body
-            > .sound__artwork
-            > .sound__tierIndicator:not(.sc-hidden)
-    ) {
-    display: none !important;
-}
 
 // adapting UI elements
 // ------------------------------------
 
-[class*="sc-"] {
-    border-radius: 12px;
-}
-
-[class*="image"],
-.playableTile__actions {
-    border-radius: 18px;
-}
-
-.header__middle {
-    .headerSearch__submit {
-        right: 210px !important;
-    }
-    .headerSearch {
-        padding: 9px 200px 9px !important;
-    }
-}
-
-.l-main {
-    border: none !important;
-}
-
-.sidebar {
-    &Header {
-        border: none !important;
-        background: clr("background", "darker");
-        padding: 4px 12px;
-    }
-}
-
-.mixedSelectionModule {
-    border-bottom: none !important;
-    padding: 18px 22px !important;
-}
