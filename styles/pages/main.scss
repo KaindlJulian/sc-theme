@@ -11,7 +11,12 @@ body {
         color: clr("foreground", "lighter");
     }
     &.sc-classic {
-        background: clr("background");
+        background: url("https://images8.alphacoders.com/130/thumb-1920-1305841.jpg"),
+            clrAlpha(0.5, "background");
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-position: center !important;
+        background-blend-mode: multiply !important;
     }
 }
 
@@ -88,7 +93,7 @@ body {
 
 .mixedModularHome {
     &__item {
-        background: clr("background", "darker");
+        background: clrAlpha(0.75, "background", "darker");
         border: none !important;
         border-radius: 16px !important;
     }
