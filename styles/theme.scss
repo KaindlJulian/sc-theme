@@ -1,9 +1,20 @@
 // applies the theme based on system
 @media (prefers-color-scheme: dark) {
     // components
-
+    @import "components/sidebar.scss";
+    @import "components/header.scss";
+    @import "components/search.scss";
+    @import "components/scrollbar.scss";
+    @import "components/player.scss";
+    @import "components/queue.scss";
+    @import "components/button.scss";
+    @import "components/tag.scss";
+    @import "components/badge.scss";
     // pages
-
+    @import "pages/main.scss";
+    @import "pages/artist.scss";
+    @import "pages/playlist.scss";
 }
+
 // applies the UI modifications
 @import "modify.scss";

@@ -1,0 +1,29 @@
+@import "../utils/_colors.scss";
+@import "../utils/_mixins.scss";
+
+input {
+    background: clr("foreground");
+    @include border("foreground", "_default", 16px);
+}
+
+.autocompleteItem:hover {
+    background-color: clr("background");
+}
+
+.searchAutocomplete {
+    background: clr("background");
+    @include border(
+        "background",
+        "_default",
+        (
+            top-left: 0px,
+            top-right: 0px,
+            bottom-right: 16px,
+            bottom-left: 16px,
+        )
+    );
+}
+
+.searchTitle {
+    background: clr("transparent");
+}

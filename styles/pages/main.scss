@@ -1,0 +1,14 @@
+@import "../utils/_colors.scss";
+@import "../utils/_mixins.scss";
+
+html {
+    @include scrollbar();
+}
+
+body {
+    background: /*background-image,*/ clr("background");
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-blend-mode: multiply !important;
+}

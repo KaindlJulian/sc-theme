@@ -1,0 +1,21 @@
+@import "../utils/_colors.scss";
+
+.queue {
+    background-color: clr("background", "darker");
+    &__itemsHeight {
+        background-image: none !important;
+    }
+    &__hide {
+        background: clr("background", "darker");
+    }
+    &__itemWrapper {
+        background-color: clr("background", "darker");
+    }
+    .queueItemView {
+        background: clr("background", "darker");
+        &.m-active,
+        &:hover {
+            background-color: clr("background");
+        }
+    }
+}

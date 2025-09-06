@@ -1,0 +1,31 @@
+@import "../utils/_colors.scss";
+@import "../utils/_mixins.scss";
+
+.header {
+    background: clr("background", "darker");
+    &__inner {
+        justify-content: space-between;
+        &::before,
+        &::after {
+            @include hide();
+        }
+    }
+    &__middle {
+        flex: 0.7 !important;
+    }
+}
+
+#searchMenuList {
+    color: clr("foreground", "lighter");
+    .searchMenu__searchFor {
+        background-color: clr("background", "darker");
+        border-color: clr("background", "darker");
+    }
+    .searchAutocomplete {
+        background-color: clr("background", "darker");
+    }
+}
+
+.searchMenu__searchForText {
+    background: clr("foreground");
+}

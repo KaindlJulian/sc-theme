@@ -1,0 +1,15 @@
+@import "../utils/_colors.scss";
+
+.sc-button-group > .sc-button,
+.loginButton {
+    color: clr("foreground", "white");
+    background-color: clr("foreground");
+    border: 1px solid clr("foreground");
+
+    &:hover {
+        border-color: clr("primary");
+    }
+    &-selected {
+        filter: none !important;
+    }
+}

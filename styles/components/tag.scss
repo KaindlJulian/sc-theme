@@ -1,0 +1,13 @@
+@import "../utils/_colors.scss";
+
+.sc-tag {
+    opacity: 0.75;
+    background: clr("foreground");
+    border-color: clr("foreground");
+    &:hover {
+        opacity: 1;
+        background: clr("foreground", "lighter");
+        border-color: clr("foreground", "lighter");
+        color: #fff !important;
+    }
+}

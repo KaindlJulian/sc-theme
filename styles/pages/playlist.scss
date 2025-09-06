@@ -1,0 +1,11 @@
+@import "../utils/_colors.scss";
+
+.trackItem {
+    &.hover,
+    &.active {
+        background-color: clr("foreground", "darker");
+    }
+    &__additional {
+        background: none !important;
+    }
+}

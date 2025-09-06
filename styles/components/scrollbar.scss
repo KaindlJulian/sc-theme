@@ -1,0 +1,7 @@
+@import "../utils/_colors.scss";
+
+.g-scrollbar,
+.g-scrollbar-vertical {
+    background: clr("foreground");
+    box-shadow: 0 0 1px clr("background", "darker");
+}

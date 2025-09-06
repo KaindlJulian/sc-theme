@@ -1,3 +1,5 @@
+@use "colors";
+
 @mixin animatedScale($factor: 1.5) {
     transition: transform 200ms;
     &:hover {
@@ -15,10 +17,31 @@
         border-radius: $size / 2;
     }
     &::-webkit-scrollbar-track {
-        background: clr("transparent");
+        background: clr("background", "darker");
     }
 }
 
 @mixin invertIcon() {
     filter: invert(1) !important;
+}
+
+@mixin hide() {
+    display: none !important;
+}
+
+@mixin border($color-key, $shade: "_default", $radius: 0px) {
+    border: 1px solid clr($color-key, $shade) !important;
+
+    @if type-of($radius) == "map" {
+        border-top-left-radius: map-get($radius, top-left, 0) !important;
+        border-top-right-radius: map-get($radius, top-right, 0) !important;
+        border-bottom-right-radius: map-get(
+            $radius,
+            bottom-right,
+            0
+        ) !important;
+        border-bottom-left-radius: map-get($radius, bottom-left, 0) !important;
+    } @else {
+        border-radius: $radius !important;
+    }
 }

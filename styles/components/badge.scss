@@ -1,0 +1,10 @@
+.soundBadge {
+    &__additional {
+        background: none !important;
+    }
+    &__artwork {
+        .sc-artwork {
+            border-radius: 4px !important;
+        }
+    }
+}

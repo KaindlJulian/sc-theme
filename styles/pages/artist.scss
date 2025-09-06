@@ -1,0 +1,11 @@
+@import "../utils/_colors.scss";
+
+.profileHeaderInfo {
+    &__userName {
+        background: clr("background", "darker");
+    }
+}
+
+.userDropbar {
+    background: clr("background", "darker");
+}

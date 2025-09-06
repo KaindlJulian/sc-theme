@@ -1,7 +1,21 @@
+@import "./utils/_mixins.scss";
+
 // removing UI elements
 // ------------------------------------
-
-
-// adapting UI elements
-// ------------------------------------
-
+.sidebarModule__webiEmbeddedModule,
+.whoToFollowModule,
+.mobileApps,
+.l-footer,
+.header__upsellWrapper,
+.header__forArtistsButton,
+.header__userNavMessagesButton,
+.header__userNavActivitiesButton,
+.header__userNavUsernameButton,
+.header__navWrapper,
+.uploadButton,
+.headerMenu.moreMenu ul:nth-child(-n + 3),
+.artistShortcutTile__badge,
+.purchaseLink__container,
+.velvetCakeIframe {
+    @include hide();
+}
